@@ -6,13 +6,30 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace App1
+
+
+namespace Data_Entry
 {
-    public partial class MainPage : ContentPage
+    public class App : Application
     {
-        public MainPage()
+        public App()
         {
-            InitializeComponent();
+            MainPage = new MainPage
+        }
+
+        protected override void OnStart()
+        {
+           
+        }
+
+        protected override void OnSleep()
+        {
+           
+        }
+
+        protected override void OnResume()
+        {
+          
         }
     }
 }
